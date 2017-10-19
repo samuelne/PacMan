@@ -46,6 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GhostMove.cs" />
+     <Compile Include="Assets\Scripts\Pacdot.cs" />
+     <Compile Include="Assets\Scripts\PacmanMove.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>I:/DOCUMENTOS SAMUEL/CURSO DE JOGOS DIGITAIS/AULA GUTO/04-09-2017/PacMan/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>

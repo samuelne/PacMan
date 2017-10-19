@@ -45,18 +45,27 @@ public class Player : MonoBehaviour
 			// COM MOVIMENTAÇÃO NA VERTICAL.
 			rigi2d.velocity = new Vector2 (horizontal * speed, vertical * speed);
 
-			anim.SetFloat("DirX", 0.1f);
+			anim.SetFloat ("DirX", 0.1f);
 
-		} 
+
+		} else {
+
+			anim.SetFloat ("DirX", 0f);
+
+		}
 
 		if (horizontal < 0) {
 
 			// COM MOVIMENTAÇÃO NA VERTICAL.
 			rigi2d.velocity = new Vector2 (horizontal * speed, vertical * speed);
 
-			anim.SetFloat("DirX", -0.1f);
+			anim.SetFloat ("DirX", -0.1f);
 
-		} 
+		} else {
+
+			anim.SetFloat ("DirX", 0f);
+
+		}
 
 
 		if (vertical > 0) {
@@ -64,21 +73,28 @@ public class Player : MonoBehaviour
 			// COM MOVIMENTAÇÃO NA VERTICAL.
 			rigi2d.velocity = new Vector2 (horizontal * speed, vertical * speed);
 
-			anim.SetFloat("DirY", 0.1f);
+			anim.SetFloat ("DirY", 0.1f);
 
-		} 
+		} else {
+
+
+			anim.SetFloat ("DirY", 0f);
+
+		}
 
 		if (vertical < 0) {
 
 			// COM MOVIMENTAÇÃO NA VERTICAL.
 			rigi2d.velocity = new Vector2 (horizontal * speed, vertical * speed);
 
-			anim.SetFloat("DirY", -0.1f);
+			anim.SetFloat ("DirY", -0.1f);
 
-		} 
+		} else {
 
 
+			anim.SetFloat ("DirY", 0f);
 
+		}
 
 	}
 }
